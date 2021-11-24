@@ -2,11 +2,11 @@ import React from 'react'
 
 interface Props {
     text: string;
-    ok?: boolean;
+    ok?: boolean;       //? => means not necessary to pass.
     num?: number;
 }
 
-const TextField: React.FC<Props> = (Props) => {     
+const TextField: React.FC<Props> = (Props) => {    
     return (
         <div>
             {Props.text}
