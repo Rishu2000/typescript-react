@@ -1,9 +1,17 @@
 import React from 'react'
 
-const TextField: React.FC<{text: string}> = ({text}) => {
+interface Props {
+    text: string;
+    ok?: boolean;
+    num?: number;
+}
+
+const TextField: React.FC<Props> = (Props) => {     
     return (
         <div>
-            {text}
+            {Props.text}
+            {Props.ok?"true":"false"}
+            {Props.num}
         </div>
     )
 }

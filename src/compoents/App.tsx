@@ -5,7 +5,7 @@ import TextField from './TextField';
 function App() {
   return (
     <div className="App">
-      <TextField text="Rishav kumar"/>
+      <TextField text="Rishav kumar" ok={true} num={23}/>
     </div>
   );
 }
