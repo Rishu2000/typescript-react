@@ -10,6 +10,7 @@ interface Props {
     num?: number;
     funStr ?: (name: string) => string;
     obj: Person;
+    handleChange: React.ChangeEventHandler<HTMLInputElement>;
 }
 
 const TextField: React.FC<Props> = (Props) => {    
@@ -26,7 +27,7 @@ const divRef = useRef<HTMLDivElement>(null);
             <h1>{Props.obj.firstName}</h1>
             <h1>{Props.obj.lastName}</h1>
             <h2>{count}</h2>
-            <input ref={inputRef}/>
+            <input ref={inputRef} onChange={Props.handleChange}/>
         </div>
     )
 }

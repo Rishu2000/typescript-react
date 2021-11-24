@@ -10,7 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <TextField text="Rishav kumar" obj={{firstName:"Rishav", lastName:"kumar"}}/>
+      <TextField text="Rishav kumar" obj={{firstName:"Rishav", lastName:"kumar"}}
+        handleChange={(event) => {
+          console.log(event.target.value);
+        }}
+        />
     </div>
   );
 }
