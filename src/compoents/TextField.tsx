@@ -18,6 +18,8 @@ const TextField: React.FC<Props> = (Props) => {
             {Props.text}
             {Props.ok?Props.funStr:"false"}
             {Props.num}
+            <h1>{Props.obj.firstName}</h1>
+            <h1>{Props.obj.lastName}</h1>
         </div>
     )
 }
