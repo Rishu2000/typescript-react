@@ -4,14 +4,14 @@ interface Props {
     text: string;
     ok?: boolean;       //? => means, not necessary to pass.
     num?: number;
-    funVoid ?: () => void;
+    funStr ?: (name: string) => string;
 }
 
 const TextField: React.FC<Props> = (Props) => {    
     return (
         <div>
             {Props.text}
-            {Props.ok?Props.funVoid:"false"}
+            {Props.ok?Props.funStr:"false"}
             {Props.num}
         </div>
     )
