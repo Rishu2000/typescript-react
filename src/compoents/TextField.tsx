@@ -14,9 +14,7 @@ interface Props {
 
 const TextField: React.FC<Props> = (Props) => {    
 
-const [count, setCount] = useState<number | null | undefined>(5);       
-setCount(null);         
-setCount(34);
+const [count, setCount] = useState<string>(Props.text);
 
     return (
         <div>
@@ -25,6 +23,7 @@ setCount(34);
             {Props.num}
             <h1>{Props.obj.firstName}</h1>
             <h1>{Props.obj.lastName}</h1>
+            <h2>{count}</h2>
         </div>
     )
 }
