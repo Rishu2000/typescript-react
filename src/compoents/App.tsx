@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/App.css';
+import TextField from './TextField';
 
 function App() {
   return (
     <div className="App">
-      Rishav
+      <TextField text="Rishav"/>
     </div>
   );
 }
